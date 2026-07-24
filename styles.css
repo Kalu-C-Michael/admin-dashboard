@@ -24,7 +24,7 @@ aside {
     grid-area: aside;
     background-color: rgb(82, 82, 228);
     display: grid;
-    grid-template-rows: 5% 40% 55%;
+    grid-template-rows: 8% 38.5% 53.5%;
 }
 
 aside div {
@@ -38,6 +38,13 @@ aside div {
 header {
     grid-area: header;
     background-color: white;
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+
+header div {
+    border: 1px solid black;
+
 }
 
 main {
