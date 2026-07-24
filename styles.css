@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    'aside header header header header'
+    'aside main main main main'
+    'aside main main main main'
+    'aside main main main main'
+    'aside main main main main';
+    height: 100vh;
+    width: 100vw;
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(82, 82, 228);
+}
+
+header {
+    grid-area: header;
+    background-color: white;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(170, 166, 166);
+}
