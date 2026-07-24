@@ -6,6 +6,7 @@ html {
 
 * {
     margin: 0;
+    border: 1px solid black;
 }
 
 body {
@@ -28,7 +29,6 @@ aside {
 }
 
 aside div {
-    border: 1px solid black;
     margin: 0;
     color: white;
 }
@@ -42,12 +42,28 @@ header {
     grid-template-rows: 40% 60%;
 }
 
-header div {
-    border: 1px solid black;
-
-}
-
 main {
     grid-area: main;
     background-color: rgb(170, 166, 166);
+    display: grid;
+    grid-template-columns: 37% 37% 26%;
+    grid-template-areas: 
+    'projects projects announcements'
+    'projects projects announcements'
+    'projects projects announcements'
+    'projects projects trending'
+    'projects projects trending';
 }
+
+.projects-container {
+    grid-area: projects;
+}
+
+.announcements-container {
+    grid-area: announcements;
+}
+
+.trending-container {
+    grid-area: trending;
+}
+
