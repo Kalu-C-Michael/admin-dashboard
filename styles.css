@@ -8,7 +8,6 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -39,6 +38,7 @@ aside {
     text-align: center;
     justify-content: start;
     align-items: center;
+    padding: 10px;
 }
 
 .dashboard img {
@@ -154,6 +154,34 @@ main {
 
 .projects-container {
     grid-area: projects;
+}
+
+.your-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 15px;
+    gap: 10px;   
+}
+
+.projects, .announcements, .trending {
+    border-left: 5px solid orange;
+    border-radius: 10px;
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.announcements, .trending {
+    border: 5px solid white;
+}
+
+.projects p {
+    margin-bottom: 20px;
+}
+.projects img {
+    height: 20px;
+    width: 20px;
+    margin-left: 150px;
 }
 
 .announcements-container {
